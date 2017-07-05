@@ -1,1 +1,0 @@
-"use strict";function saveFunction1(){alert('You"ve clicked on save button')}function myFunction(){alert('You"ve clicked on example button')}document.getElementById("main-header").addEventListener("click",function(){alert("main header")}),document.getElementById("main-header").addEventListener("click",function(){alert("main header")});

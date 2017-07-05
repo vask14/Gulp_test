@@ -85,17 +85,5 @@ gulp.task('prod',function() {
     gulp.src(['./src/*.html','./src/js/min/*.js','./src/ccs/*.css'])
     .pipe(gulpCopy('./prod',{prefix:1}));
 });
-/*gulp.task('css',function(){
-    return gulp.src('styles/*.less')
-    .pipe(less())
-    .pipe(concat('all.css'))
-  //  .pipe(minifyCSS())
-    .pipe(gulp.dest('buid/css'))
-});
-
-gulp.task('watch',function() {
-    gulp.watch('styles/*.less', ['css'])
-})
-
-gulp.task('default',['css']);
-*/
+//gulp.task('prod',['del','copy']);
+gulp.task('default',['prod']);
